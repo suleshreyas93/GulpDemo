@@ -16,3 +16,9 @@ const gulp = require("gulp");
  gulp.task("default",function(){
      return console.log("Gulp is running...");
  });
+
+ //Copy Html Files
+ gulp.task("copyHtml",function(){
+     gulp.src("src/*.html")
+        .pipe(gulp.dest("dist"))
+ });
