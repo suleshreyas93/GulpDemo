@@ -54,4 +54,11 @@ gulp.task("scripts",function(){
 })
 
 gulp.task("default",["message","copyHtml","imageMin","sass","scripts"]);
+
+gulp.task("watch",function(){
+    gulp.watch("src/images/*",["imageMin"]);
+    gulp.watch("src/js/*.js",["scripts"]);
+    gulp.watch("src/*.html",["copyHtml"]);
+    gulp.watch("src/sass/*.scss",["sass"]);
+});
  
