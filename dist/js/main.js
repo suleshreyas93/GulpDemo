@@ -1,0 +1,1 @@
+console.log("Hello World!!"),console.log("Let's Minify using gulp!"),console.log("This is file 2"),alert("This is file 2");
