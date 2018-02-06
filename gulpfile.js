@@ -16,10 +16,6 @@ const sass = require("gulp-sass");
      return console.log("Gulp is running...");
  });
 
- gulp.task("default",function(){
-     return console.log("Gulp is running...");
- });
-
  //Copy Html Files
  gulp.task("copyHtml",function(){
      gulp.src("src/*.html")
@@ -46,5 +42,9 @@ gulp.task("sass",function(){
         .pipe(sass().on("error",sass.logError))
         
         .pipe(gulp.dest("dist/css"))
+});
+
+gulp.task("default",function(){
+    return console.log("Gulp is running...");
 });
  
